@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.dso.interieur.rie.gouv.fr/dockerhub/amithkk/stable-diffusion
+  repository: registry.dso.interieur.rie.gouv.fr/dockerhub/jaubertaot/sd
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
