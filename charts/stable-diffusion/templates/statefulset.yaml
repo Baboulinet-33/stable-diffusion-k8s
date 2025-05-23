@@ -52,6 +52,13 @@ spec:
           volumeMounts:
             - mountPath: /models
               name: {{ include "stable-diffusion.fullname" . }}-model-store
+          resources: 
+            limits:
+              cpu: 2
+              memory: 4Gi
+            requests:
+              cpu: 2
+              memory: 4Gi
       containers:
         - name: {{ .Chart.Name }}-stable-diffusion
           securityContext:
