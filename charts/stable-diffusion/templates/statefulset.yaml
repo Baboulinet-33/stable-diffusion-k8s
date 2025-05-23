@@ -40,6 +40,11 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       initContainers:
         - name: ensure-stable-models
+          env:
+          - name: HTTP_PROXY
+            value: http://10.224.32.127:80
+          - name: HTTPS_PROXY
+            value: http://10.224.32.127:80
           image: registry.dso.interieur.rie.gouv.fr/dockerhub/busybox:1.35
           command: ["/bin/sh"]
           args:
