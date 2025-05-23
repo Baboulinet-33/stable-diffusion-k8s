@@ -19,7 +19,7 @@ models:
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "demo"
 cliFlags: "--extra-models-cpu --optimized-turbo"
 
 persistence:
